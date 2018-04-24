@@ -18,7 +18,7 @@
 <body>
 
 <div class="container">
-  <h3>JSON Editor with pagination, searching and sorting</h3>
+  <h3>JSON CRUD with pagination, searching and sorting</h3>
   <h5>using <a href="http://php.net/" target="_blank">PHP</a>, <a href="https://getbootstrap.com/" target="_blank">Bootstrap 4</a> and <a href="https://github.com/pguso/bootstrap-data-table" target="_blank">BDT</a></h5>
   <hr class="my-4">
   <p>Copyright 2018 <a href="http://florincatalin.16mb.com/Jurnal" target="_blank">Florin Cătălin Tofan</a> <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
