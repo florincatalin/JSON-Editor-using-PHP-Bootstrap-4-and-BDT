@@ -56,8 +56,10 @@
 			<td> <?php echo $calup->tags; ?> </td>
             <td> <?php echo $calup->url; ?> </td>
 			<td style="text-align: center;">
-			<a class="btn btn-primary btn-lg btn-sm" href="edit.php?index=<?php echo $index; ?>" role="button">Edit</a> 
-			<a class="btn btn-primary btn-lg btn-sm" href="delete.php?index=<?php echo $index; ?>" role="button">Delete</a>
+			<div class="btn-group btn-group-sm" role="group">
+			<a class="btn btn-primary btn-sm" href="edit.php?index=<?php echo $index; ?>" role="button">Edit</a> 
+			<a class="btn btn-warning btn-sm" href="delete.php?index=<?php echo $index; ?>" role="button">Delete</a>
+			</div>
 			</td>
         </tr>
 		<?php
