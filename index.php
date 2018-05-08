@@ -25,15 +25,17 @@
 </div>
 <br />
 
+<div class="container"><a class="btn btn-primary btn-lg btn-sm" href="add.php" role="button">Add</a></div><br />
+
 <div class="container">
 <table id="bootstrap-table" class="table table-hover">
 	<thead class="text-center">
-		<th>Nr. crt. <i class="fa fa-sort" aria-hidden="true"></i></th>
-		<th>Title <i class="fa fa-sort" aria-hidden="true"></i></th>
-		<th>Text <i class="fa fa-sort" aria-hidden="true"></i></th>
-		<th>Tags <i class="fa fa-sort" aria-hidden="true"></i></th>
-		<th>URL <i class="fa fa-sort" aria-hidden="true"></i></th>
-		<th>Operații</th>
+		<th class="col-sm-1>Nr. crt. <i class="fa fa-sort" aria-hidden="true"></i></th>
+		<th class="col-sm-2>Title <i class="fa fa-sort" aria-hidden="true"></i></th>
+		<th class="col-sm-3>Text <i class="fa fa-sort" aria-hidden="true"></i></th>
+		<th class="col-sm-2>Tags <i class="fa fa-sort" aria-hidden="true"></i></th>
+		<th class="col-sm-2>URL <i class="fa fa-sort" aria-hidden="true"></i></th>
+		<th class="col-sm-2">Operații</th>
 	</thead>
 	<tbody>
 		<?php
@@ -53,9 +55,9 @@
             <td> <?php echo $calup->text; ?> </td>
 			<td> <?php echo $calup->tags; ?> </td>
             <td> <?php echo $calup->url; ?> </td>
-			<td style="text-align: center;"> <a class="btn btn-primary btn-lg btn-sm" href="edit.php?index=<?php echo $index; ?>" role="button">Edit</a>
-                 <a class="btn btn-primary btn-lg btn-sm" href="delete.php?index=<?php echo $index; ?>" role="button">Delete</a>
-				 <a class="btn btn-primary btn-lg btn-sm" href="add.php" role="button">Add</a>
+			<td style="text-align: center;">
+			<a class="btn btn-primary btn-lg btn-sm" href="edit.php?index=<?php echo $index; ?>" role="button">Edit</a> 
+			<a class="btn btn-primary btn-lg btn-sm" href="delete.php?index=<?php echo $index; ?>" role="button">Delete</a>
 			</td>
         </tr>
 		<?php
