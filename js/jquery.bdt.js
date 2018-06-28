@@ -62,7 +62,7 @@
     $.fn.bdt = function (options, callback) {
 
         var settings = $.extend({
-            pageRowCount: 1000,
+            pageRowCount: 100,
             arrowDown: 'fa fa-angle-down',
             arrowUp: 'fa fa-angle-up',
             searchFormClass: 'pull-left search-form',
@@ -138,27 +138,27 @@
                                     )
                                     .append(
                                         $('<option>', {
-                                            value: 15,
-                                            text: 15
-                                        })
-                                    )
-                                    .append(
-                                        $('<option>', {
-                                            value: 20,
-                                            text: 20
-                                        })
-                                    )
-                                    .append(
-                                        $('<option>', {
                                             value: 25,
                                             text: 25
                                         })
                                     )
                                     .append(
                                         $('<option>', {
-                                            value: 1000,
-                                            text: 1000,
+                                            value: 50,
+                                            text: 50
+                                        })
+                                    )
+                                    .append(
+                                        $('<option>', {
+                                            value: 100,
+                                            text: 100,
                                             selected: 'selected'
+                                        })
+                                    )
+                                    .append(
+                                        $('<option>', {
+                                            value: 1000,
+                                            text: 1000
                                         })
                                     )
                             )
