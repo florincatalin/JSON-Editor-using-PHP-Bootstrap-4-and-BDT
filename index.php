@@ -50,7 +50,7 @@
 		foreach ($calup as $calup) : 
 		?>
         <tr style="display: table-row;">
-		    <td style="text-align: center;"> <?php echo $index; ?> </td>
+		    <td style="text-align: center;"> <?php echo $index+1; ?> </td>
             <td> <?php echo $calup->title; ?> </td>
             <td> <?php echo $calup->text; ?> </td>
 			<td> <?php echo $calup->tags; ?> </td>
