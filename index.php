@@ -30,11 +30,11 @@
 <div class="container">
 <table id="bootstrap-table" class="table table-hover">
 	<thead class="text-center">
-		<th class="col-sm-1>Nr. crt. <i class="fa fa-sort" aria-hidden="true"></i></th>
-		<th class="col-sm-2>Title <i class="fa fa-sort" aria-hidden="true"></i></th>
-		<th class="col-sm-3>Text <i class="fa fa-sort" aria-hidden="true"></i></th>
-		<th class="col-sm-2>Tags <i class="fa fa-sort" aria-hidden="true"></i></th>
-		<th class="col-sm-2>URL <i class="fa fa-sort" aria-hidden="true"></i></th>
+		<th class="col-sm-1">Nr. crt. <i class="fa fa-sort" aria-hidden="true"></i></th>
+		<th class="col-sm-2">Title <i class="fa fa-sort" aria-hidden="true"></i></th>
+		<th class="col-sm-3">Text <i class="fa fa-sort" aria-hidden="true"></i></th>
+		<th class="col-sm-2">Tags <i class="fa fa-sort" aria-hidden="true"></i></th>
+		<th class="col-sm-2">URL <i class="fa fa-sort" aria-hidden="true"></i></th>
 		<th class="col-sm-2">Operații</th>
 	</thead>
 	<tbody>
@@ -47,7 +47,10 @@
 
 		<?php 
 		$index = 0;
-		foreach ($calup as $calup) : 
+		
+		if(is_array($calup)){
+		
+		foreach ($calup as $calup): 
 		?>
         <tr style="display: table-row;">
 		    <td style="text-align: center;"> <?php echo $index+1; ?> </td>
@@ -64,7 +67,9 @@
         </tr>
 		<?php
 		$index++;
-		endforeach; 
+		endforeach;
+		
+		} 
 		?>
 	</tbody>
 </table>
